@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Паюсов](https://up.htmlacademy.ru/adaptive/17/user/703335).
-* Наставник: `Неизвестно`.
+* Наставник: Андрей Грачев.
 
 ---
 
