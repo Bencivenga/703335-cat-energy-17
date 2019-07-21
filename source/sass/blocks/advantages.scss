@@ -22,6 +22,7 @@
   position: relative;
   padding-left: 80px;
   margin-bottom: 20px;
+
   &::before {
     content: "";
     position: absolute;
@@ -30,31 +31,25 @@
     width: 60px;
     height: 60px;
     background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
   }
-}
 
-.advantages__item--leaf::before {
-  background-image: url("../../img/advantage-leaf@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  &--leaf::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
 
-.advantages__item--powder::before {
-  background-image: url("../../img/advantage-powder@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  &--powder::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
 
-.advantages__item--dining::before {
-  background-image: url("../../img/advantage-dining@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  &--dining::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
 
-.advantages__item--clock::before {
-  background-image: url("../../img/advantage-clock@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  &--clock::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 }
 
 .advantages__description {
