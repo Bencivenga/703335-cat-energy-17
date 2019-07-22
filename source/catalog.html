@@ -4,33 +4,29 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="http://placehold.it" width="33" height="38" alt="Логотип магазина «Кэт Энерджи»">
-    </a>
     <nav class="main-nav">
+      <a class="main-nav__logo" href="index.html">
+        <img class="main-nav__logo-image" src="http://placehold.it" width="33" height="38" alt="Логотип магазина «Кэт Энерджи»">
+      </a>
       <button class="main-nav__toggle" type="button">
         Открыть меню
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="page-header__logo">
-              <img class="page-header__logo-image" src="http://placehold.it" width="33" height="38" alt="Логотип магазина «Кэт Энерджи»">
-            </a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a>Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="site-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -50,7 +46,7 @@
                 Cat Energy Pro 500 г
               </h3>
             </a>
-            <table class="catalog__description">
+            <table class="catalog__table">
               <tr>
                 <td>Объем</td>
                 <td>500 г</td>
@@ -77,7 +73,7 @@
                 Cat Energy Pro 1000 г
               </h3>
             </a>
-            <table class="catalog__description">
+            <table class="catalog__table">
               <tr>
                 <td>Объем</td>
                 <td>1000 г</td>
@@ -104,7 +100,7 @@
                 Cat Energy Pro 500 г
               </h3>
             </a>
-            <table class="catalog__description">
+            <table class="catalog__table">
               <tr>
                 <td>Объем</td>
                 <td>500 г</td>
@@ -131,7 +127,7 @@
                 Cat Energy Pro 1000 г
               </h3>
             </a>
-            <table class="catalog__description">
+            <table class="catalog__table">
               <tr>
                 <td>Объем</td>
                 <td>1000 г</td>
@@ -158,7 +154,7 @@
                 Cat Energy Slim 500 г
               </h3>
             </a>
-            <table class="catalog__description">
+            <table class="catalog__table">
               <tr>
                 <td>Объем</td>
                 <td>500 г</td>
@@ -185,7 +181,7 @@
                 Cat Energy Slim 500 г
               </h3>
             </a>
-            <table class="catalog__description">
+            <table class="catalog__table">
               <tr>
                 <td>Объем</td>
                 <td>1000 г</td>
@@ -212,7 +208,7 @@
                 Cat Energy Slim 500 г
               </h3>
             </a>
-            <table class="catalog__description">
+            <table class="catalog__table">
               <tr>
                 <td>Объем</td>
                 <td>500 г</td>
@@ -342,23 +338,23 @@
       <img class="page-footer__logo-image" src="http://placehold.it" width="128" height="24" alt="Логотип магазина «Кэт Энерджи»">
     </a>
 
-      <ul class="page-footer__social social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="#">
-            Мы в Вконтакте
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--inst" href="#">
-            Мы на Фейсбуке
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--fb" href="#">
-            Мы в Инстаграме
-          </a>
-        </li>
-      </ul>
+    <ul class="page-footer__social social-list">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--vk" href="#">
+          Мы в Вконтакте
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--inst" href="#">
+          Мы на Фейсбуке
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--fb" href="#">
+          Мы в Инстаграме
+        </a>
+      </li>
+    </ul>
 
     <div class="page-footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">

@@ -1,0 +1,64 @@
+.catalog {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #111111;
+  margin: 0;
+}
+
+.catalog__item {
+  margin-bottom: 25px;
+}
+
+.catalog__wrapper {
+  width: 140px;
+  margin-left: auto;
+}
+
+.catalog__link {
+  text-decoration: none;
+}
+
+.catalog__card-title {
+  width: 73px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.catalog__table {
+  width: 140px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444444;
+  margin-bottom: 23px;
+}
+
+.catalog__btn {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #68b738;
+}
