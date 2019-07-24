@@ -4,6 +4,17 @@
   margin-bottom: 22px;
 }
 
+.choose-program__bg-wrapper {
+  height: 305px;
+  background-color: #63a73a;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 1px;
+  margin-bottom: 135px;
+  text-align: center;
+}
+
 .choose-program__title {
   margin: 0;
   margin-top: 28px;
@@ -26,7 +37,6 @@
 }
 
 .choose-program__btn {
-  display: block;
   box-sizing: border-box;
   width: 100%;
   font-family: "Oswald", sans-serif;
@@ -40,4 +50,30 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: #68b738;
+}
+
+@media (min-width: $tablet-width) {
+  .choose-program {
+    width: auto;
+    margin: 0;
+    margin-left: 90px;
+  }
+
+  .choose-program__bg-wrapper {
+    background: none;
+    width: 430px;
+    height: auto;
+    margin-bottom: 45px;
+    padding-top: 0;
+  }
+
+  .choose-program__title,
+  .choose-program__text {
+    color: #111111;
+    text-align: left;
+  }
+
+  .choose-program__btn {
+    width: auto;
+  }
 }
