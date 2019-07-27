@@ -11,6 +11,7 @@
   font-weight: 400;
   color: #111111;
   margin: 0;
+  margin-bottom: 35px;
 }
 
 .catalog__item {
@@ -27,7 +28,7 @@
 }
 
 .catalog__card-title {
-  width: 73px;
+  width: 75px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -39,7 +40,7 @@
 }
 
 .catalog__table {
-  width: 140px;
+  width: 100%;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
@@ -61,4 +62,55 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: #68b738;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: auto;
+    margin: 0;
+  }
+
+  .catalog__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    width: 254px;
+    padding: 40px 35px;
+    margin: 30px;
+    background-color: #f2f2f2;
+  }
+
+  .catalog__wrapper {
+    width: auto;
+    margin: 0;
+  }
+
+  .catalog__card-title {
+    width: 125px;
+    padding-top: 165px;
+    font-size: 20px;
+  }
+
+  .catalog__table {
+    font-size: 16px;
+    border-collapse: collapse;
+  }
+
+  .catalog__row {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .catalog__table td:last-child {
+    text-align: right;
+    padding: 8px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    width: 175px;
+    margin: 40px;
+  }
 }

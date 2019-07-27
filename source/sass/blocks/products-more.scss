@@ -19,11 +19,11 @@
   line-height: 16px;
   font-weight: 400;
   color: #444444;
+  margin: 0;
   margin-bottom: 22px;
 }
 
 .products-more__btn {
-  display: block;
   box-sizing: border-box;
   width: 100%;
   font-family: "Oswald", sans-serif;
@@ -35,4 +35,30 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .products-more {
+    width: 248px;
+    padding: 40px 38px;
+    margin: 30px;
+    border: 1px solid #e6e6e6;
+  }
+
+  .products-more__title {
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding-top: 125px;
+  }
+
+  .products-more__text {
+    font-size: 16px;
+    margin-bottom: 85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products-more {
+    width: 169px;
+  }
 }

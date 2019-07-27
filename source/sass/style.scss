@@ -1,4 +1,6 @@
 @import "fonts.scss";
+@import "scaffolding.scss";
+@import "variables.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/choose-program.scss";
@@ -7,6 +9,5 @@
 @import "blocks/page-footer.scss";
 @import "blocks/catalog.scss";
 @import "blocks/products-more.scss";
-@import "blocks/background-wrapper.scss";
 @import "blocks/site-list.scss";
-@import "blocks/copyright.scss"
+@import "blocks/copyright.scss";

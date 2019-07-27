@@ -1,9 +1,14 @@
 .site-list__link {
+  display: block;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  padding: 0 20px;
+  padding-top: 20px;
+  padding-bottom: 25px;
   color: #111111;
+  border-top: 1px solid #e6e6e6;
   text-transform: uppercase;
   text-decoration: none;
 }
