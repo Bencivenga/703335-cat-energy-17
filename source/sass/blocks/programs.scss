@@ -57,8 +57,8 @@
 
 @media (min-width: $tablet-width) {
   .programs {
-    width: auto;
-    margin: 0;
+    width: 708px;
+    padding: 0 30px;
   }
 
   .programs__list {
@@ -92,6 +92,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .programs {
+    width: 1220px;
+    padding: 0 40px;
+  }
+
   .programs__list {
     flex-direction: row;
     justify-content: space-between;

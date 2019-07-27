@@ -4,7 +4,7 @@
   margin-bottom: 22px;
 }
 
-.choose-program__bg-wrapper {
+.choose-program__lead {
   height: 305px;
   background-color: #63a73a;
   background-image: url("../img/index-background-mobile@1x.jpg");
@@ -54,15 +54,15 @@
 
 @media (min-width: $tablet-width) {
   .choose-program {
-    width: auto;
-    margin: 0;
-    margin-left: 90px;
+    width: 708px;
+    padding: 0 30px;
   }
 
-  .choose-program__bg-wrapper {
+  .choose-program__lead {
     background: none;
     width: 430px;
     height: auto;
+    margin-left: 90px;
     margin-bottom: 45px;
     padding-top: 0;
   }
@@ -75,5 +75,18 @@
 
   .choose-program__btn {
     width: auto;
+    margin-left: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .choose-program {
+    width: 1220px;
+    padding: 0 40px;
+  }
+
+  .choose-program__lead,
+  .choose-program__btn {
+    margin-left: 80px;
   }
 }
