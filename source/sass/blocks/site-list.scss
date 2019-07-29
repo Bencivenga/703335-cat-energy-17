@@ -4,11 +4,46 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  padding: 0 20px;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 20px 20px 25px;
   color: #111111;
   border-top: 1px solid #e6e6e6;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.site-list__link:not(.site-list__link--active) {
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__link {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    padding: 10px 15px;
+    border: none;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 20px;
+        left: 20px;
+        bottom: 0;
+        height: 2px;
+        background-color: #68b738;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    font-size: 20px;
+    padding: 10px 16px;
+  }
 }
