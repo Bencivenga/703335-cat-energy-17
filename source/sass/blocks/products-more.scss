@@ -40,7 +40,7 @@
 @media (min-width: $tablet-width) {
   .products-more {
     width: 248px;
-    padding: 40px 38px;
+    padding: 40px 36px;
     margin: 30px;
     border: 1px solid #e6e6e6;
   }
@@ -60,5 +60,6 @@
 @media (min-width: $desktop-width) {
   .products-more {
     width: 169px;
+    margin: 40  px;
   }
 }

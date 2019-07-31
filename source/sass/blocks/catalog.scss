@@ -66,8 +66,8 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    width: auto;
-    margin: 0;
+    width: 768px;
+    margin: 0 auto;
   }
 
   .catalog__container {
@@ -109,6 +109,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
   .catalog__item {
     width: 175px;
     margin: 40px;
