@@ -1,0 +1,25 @@
+.social-list__item {
+  width: 55px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list__icon {
+    &--vk {
+      width: 31px;
+      height: 19px;
+    }
+
+    &--insta {
+        width: 23px;
+        height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+      margin-top: -5px;
+      margin-left: -14px;
+    }
+  }
+}
