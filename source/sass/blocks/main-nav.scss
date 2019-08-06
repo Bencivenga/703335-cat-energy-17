@@ -12,6 +12,14 @@
 .main-nav__logo-image {
   width: 192px;
   height: 65px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-nav__toggle {
@@ -81,7 +89,7 @@
     width: 92%;
     padding: 0 30px;
     padding-top: 32px;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 50px;
   }
 
@@ -96,8 +104,6 @@
   .main-nav__logo-image {
     width: 192px;
     height: auto;
-    margin: 0 auto;
-    margin-top: 24px;
   }
 
   .main-nav__toggle {
@@ -113,6 +119,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    max-width: 94%;
     padding: 0 40px;
     padding-top: 66px;
     margin-bottom: 98px;
@@ -124,7 +131,7 @@
   }
 
   .main-nav__logo-image {
-    width: 202px;
+    width: 210px;
   }
 
   .main-nav__list {

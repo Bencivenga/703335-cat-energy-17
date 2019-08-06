@@ -4,6 +4,8 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
   padding: 20px 20px 25px;
   color: #111111;
   border-top: 1px solid #e6e6e6;
@@ -22,6 +24,7 @@
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
+    margin: 0;
     padding: 10px 15px;
     border: none;
 
@@ -45,5 +48,6 @@
   .site-list__link {
     font-size: 20px;
     padding: 10px 16px;
+    // color: #ffffff;
   }
 }

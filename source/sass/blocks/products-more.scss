@@ -39,6 +39,7 @@
 
 @media (min-width: $tablet-width) {
   .products-more {
+    order: 1;
     width: 248px;
     padding: 40px 36px;
     margin: 30px;

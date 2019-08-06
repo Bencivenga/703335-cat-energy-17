@@ -16,15 +16,28 @@
   padding: 22px 20px;
   margin-bottom: 20px;
   background-color: #f2f2f2;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #68b738;
-    border-radius: 50%;
-  }
+.programs__illustration {
+  position: absolute;
+  top: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.programs__icon {
+  position: absolute;
+}
+
+.programs__icon--slim {
+  left: 7px;
+}
+
+.programs__icon--pro {
+  top: 10px;
+  left: -12px;
 }
 
 .programs__title {
@@ -44,9 +57,12 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 22px;
 }
 
 .programs__link {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -54,6 +70,18 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #111111;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 12px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -74,13 +102,26 @@
     padding-left: 50px;
     padding-right: 280px;
     margin-bottom: 30px;
+  }
 
-    &::before {
-      right: 65px;
-      bottom: 80px;
-      width: 200px;
-      height: 200px;
-    }
+  .programs__icon--slim {
+    width: 69%;
+    height: 100%;
+    left: 22px;
+    bottom: 13px;
+  }
+
+  .programs__icon--pro {
+    width: 133%;
+    height: 100%;
+    right: -22px;
+  }
+
+  .programs__illustration {
+    right: 65px;
+    bottom: 80px;
+    width: 200px;
+    height: 200px;
   }
 
   .programs__title {
@@ -94,11 +135,16 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 50px;
+    border: none;
   }
 
   .programs__link {
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      background-image: url("../img/icon-icon-right-arrow-long.svg");
+    }
   }
 }
 
@@ -130,12 +176,21 @@
     padding-left: 52px;
     padding-right: 52px;
     margin: 0 40px;
+  }
 
-    &::before {
-      top: 48px;
-      left: 48px;
-      width: 100px;
-      height: 100px;
-    }
+  .programs__illustration {
+    top: 48px;
+    left: 48px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .programs__icon--slim {
+    left: 16px;
+    top: -7px;
+  }
+
+  .programs__icon--pro {
+    right: -10px;
   }
 }
