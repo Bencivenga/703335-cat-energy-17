@@ -36,6 +36,8 @@
     width: 50%;
     height: 696px;
   }
+}
+
 
 @media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
   .page-header--viewing::after {
@@ -43,11 +45,10 @@
   }
 }
 
-  .page-header--viewing .site-list__link {
-    color: #ffffff;
-  }
+.page-header--viewing .site-list__link {
+  color: #ffffff;
+}
 
-  .page-header--viewing .site-list__link::after {
-    background-color: #ffffff;
-  }
+.page-header--viewing .site-list__link::after {
+  background-color: #ffffff;
 }
