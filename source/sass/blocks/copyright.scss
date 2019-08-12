@@ -3,6 +3,14 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+
+  &:hover .copyright__htmlacademy {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -11,4 +19,12 @@
   line-height: 16px;
   font-weight: 400;
   color: #444444;
+}
+
+.copyright__htmlacademy {
+  fill: #666666;
+
+  &:active {
+    opacity: 0.3;
+  }
 }

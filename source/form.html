@@ -5,19 +5,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
       <div class="main-nav__logo-wrapper">
         <a class="main-nav__logo" href="index.html">
-          <img class="main-nav__logo-image" src="http://placehold.it" width="33" height="38" alt="Логотип магазина «Кэт Энерджи»">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="192" height="65" alt="Логотип магазина «Кэт Энерджи»">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">
-          Открыть меню
+          <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
       <ul class="main-nav__list site-list">
@@ -25,14 +29,15 @@
           <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          <a class="site-list__link site-list__link--active">Каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link site-list__link--active">Подбор программы</a>
+          <a class="site-list__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
+
 
   <main class="page-main">
     <!-- Здесь будут формы -->
@@ -41,29 +46,40 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="http://placehold.it" width="128" height="24" alt="Логотип магазина «Кэт Энерджи»">
+        <img src="img/logo-footer.svg" width="130" height="25">
       </a>
       <ul class="page-footer__social social-list">
         <li class="social-list__item">
           <a class="social-list__link social-list__link--vk" href="#">
-            Мы в Вконтакте
+            <span class="visually-hidden">Мы в Вконтакте</span>
+            <svg class="social-list__icon social-list__icon--vk" width="22" height="12">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--inst" href="#">
-            Мы на Фейсбуке
+          <a class="social-list__link social-list__link--insta" href="#">
+            <span class="visually-hidden">Мы в Инстаграме</span>
+            <svg class="social-list__icon social-list__icon--insta" width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link social-list__link--fb" href="#">
-            Мы в Инстаграме
+            <span class="visually-hidden">Мы на Фейсбуке</span>
+            <svg class="social-list__icon social-list__icon--fb" width="10" height="19">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
           </a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
-          <img class="copyright__academy-logo-image" src="http://placehold.it" width="27" height="34" alt="Логотип академии">
+          <svg class="copyright__htmlacademy" width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </div>

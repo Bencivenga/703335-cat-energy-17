@@ -3,6 +3,18 @@
   text-align: center;
 }
 
+.social-list__icon {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .social-list__icon {
     &--vk {
@@ -11,8 +23,8 @@
     }
 
     &--insta {
-        width: 23px;
-        height: 23px;
+      width: 23px;
+      height: 23px;
     }
 
     &--fb {
