@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -127,25 +127,45 @@
         Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
       <div class="proof__wrapper">
-        <div class="result">
-          <div class="result__item">
-            <b class="result__total">5 кг</b>
-            <span class="result__text">снижение веса</span>
-          </div>
-          <div class="result__item">
-            <b class="result__total">60 дней</b>
-            <span class="result__text">затрачено времени</span>
-          </div>
-          <p class="result__total-price">
-            Затраты на питание: 15 000 руб.
-          </p>
-        </div>
+        <ul class="result">
+          <li class="result__item">
+            <div class="result__wrapper">
+              <b class="result__total">5 кг</b>
+              <p class="result__text">снижение веса</p>
+            </div>
+          </li>
+          <li class="result__item">
+            <div class="result__wrapper">
+              <b class="result__total">60 дней</b>
+              <p class="result__text">затрачено времени</p>
+            </div>
+          </li>
+        </ul>
+        <p class="result__total-price">
+          Затраты на питание: 15 000 руб.
+        </p>
+      </div>
+      <div class="proof__image-wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/before-desktop@1x.webp, img/content/before-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/before-tablet@1x.webp, img/content/before-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/content/before-mobile@1x.webp, img/content/before-mobile@2x.webp 2x">
+          <img class="proof__image proof__image--before" src="img/content/before-mobile@1x.png" srcset="img/content/before-mobile@2x.png 2x" alt="Толстый кот">
+        </picture>
+        <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/after-desktop@1x.webp, img/content/after-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/after-tablet@1x.webp, img/content/after-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/content/after-mobile@1x.webp, img/content/after-mobile@2x.webp 2x">
+          <img class="proof__image proof__image--after" src="img/content/after-mobile@1x.png" srcset="img/content/after-mobile@2x.png 2x" alt="Стройный кот">
+        </picture>
       </div>
       <div class="comparison">
         <button class="comparison__btn" type="button">
           Было
         </button>
-        <div class="comparison__range"></div>
+        <div class="comparison__range">
+          <div class="comparison__toggle"></div>
+        </div>
         <button class="comparison__btn" type="button">
           Стало
         </button>
