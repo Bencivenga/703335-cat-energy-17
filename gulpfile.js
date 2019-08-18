@@ -14,6 +14,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
+var htmlmin = require("gulp-htmlmin");
 var server = require("browser-sync").create();
 
 gulp.task("clean", function () {
@@ -33,10 +34,21 @@ gulp.task("copy", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("build"));
+    .pipe(htmlmin({
+      minifyJS: true,
+      minifyURLs: true,
+      collapseWhitespace: true,
+      removeComments: true,
+      sortAttributes: true,
+      sortClassName: true
+    }))
+    .pipe(gulp.dest("build"))
+    .pipe(sourcemap.write());
 });
 
 gulp.task("sprite", function () {
@@ -118,8 +130,8 @@ gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
 gulp.task("refresh", function (done) {
- server.reload();
- done();
+  server.reload();
+  done();
 });
 
 gulp.task("build", gulp.series(
