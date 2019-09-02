@@ -1,5 +1,6 @@
 .main-nav {
   width: auto;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .main-nav__logo-wrapper {
@@ -7,11 +8,13 @@
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+  // border-bottom: 1px solid #ededed;
 }
 
 .main-nav__logo-image {
   width: 192px;
   height: 65px;
+  transition: all, 0.3s;
 
   &:hover {
     opacity: 0.8;
@@ -91,6 +94,7 @@
     padding-top: 32px;
     margin: 0 auto;
     margin-bottom: 50px;
+    border: 0;
   }
 
   .main-nav__logo-wrapper {
@@ -99,6 +103,7 @@
     height: 58px;
     margin-right: 93px;
     padding: 0;
+    border: 0;
   }
 
   .main-nav__logo-image {

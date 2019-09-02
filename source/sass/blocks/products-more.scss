@@ -1,5 +1,23 @@
 .products-more {
+  position: relative;
   text-align: center;
+  padding-bottom: 23px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: -20px;
+    bottom: 0;
+    height: 1px;
+    background-color: #ededed;
+    width: calc(100% + 40px);
+  }
+}
+
+.products-more__icon {
+  opacity: 0.2;
+  margin-bottom: 25px;
 }
 
 .products-more__title {
@@ -25,6 +43,7 @@
 
 .products-more__btn {
   box-sizing: border-box;
+  display: inline-block;
   width: 100%;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -35,21 +54,41 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .products-more {
     order: 1;
-    width: 248px;
-    padding: 40px 36px;
-    margin: 30px;
+    width: 250px;
+    height: 432px;
+    padding: 0 36px;
+    padding-bottom: 3px;
+    margin-top: 160px;
     border: 1px solid #e6e6e6;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .products-more__icon {
+    width: 60px;
+    height: 60px;
+    margin: 50px 0;
   }
 
   .products-more__title {
     font-size: 20px;
     margin-bottom: 30px;
-    padding-top: 125px;
   }
 
   .products-more__text {

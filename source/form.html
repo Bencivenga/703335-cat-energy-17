@@ -31,10 +31,10 @@
           <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link">Каталог продукции</a>
+          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link site-list__link--active" href="form.html">Подбор программы</a>
+          <a class="site-list__link site-list__link--active">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -42,13 +42,154 @@
 
 
   <main class="page-main">
-    <!-- Здесь будут формы -->
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form__container">
+        <h1 class="form__main-title">Подбор программы</h1>
+        <p class="form__text">Заполните анкету и мы подберем
+          программу питания для вашего кота</p>
+      </div>
+      <div class="form__list-wrapper">
+        <ul class="form__list form__list--about-cat">
+          <li class="form__item">
+            <label class="form__label" for="form-name">Имя:*</label>
+            <input class="form__input-text" type="text" name="name" id="form-name" placeholder="барсик" required>
+          </li>
+          <li class="form__item">
+            <label class="form__label" for="form-weight">Вес (кг):*</label>
+            <input class="form__input-text" type="number" name="weight" id="form-weight" placeholder="7" required>
+          </li>
+          <li class="form__item">
+            <label class="form__label" for="form-age">Возраст (лет):</label>
+            <input class="form__input-text" type="number" name="age" id="form-age" placeholder="7">
+          </li>
+
+        </ul>
+
+        <div class="form__border-wrapper">
+          <ul class="form__list form__list--options">
+            <li class="form__item form__item--radio">
+              <input class="form__input-radio visually-hidden" type="radio" name="option" id="form-loss" value="weight-loss"  checked>
+              <label class="form__label form__label--radio" for="form-loss">
+                Похудение
+              </label>
+            </li>
+            <li class="form__item form__item--radio">
+              <input class="form__input-radio visually-hidden" type="radio" name="option" id="form-gain" value="weight-gain">
+              <label class="form__label form__label--radio" for="form-gain">
+                Набор массы
+              </label>
+            </li>
+            <li class="form__item form__item--radio">
+              <input class="form__input-radio visually-hidden" type="radio" name="option" id="form-advice" value="advice">
+              <label class="form__label form__label--radio" for="form-advice">
+                Не знаю (Нужен ваш совет)
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <fieldset class="form__fieldset form__fieldset--owner">
+        <div class="form__container">
+          <h2 class="form__title form__title--owner">
+            Контактные данные
+            (владельца кота)
+          </h2>
+
+          <ul class="form__list form__list--owner">
+            <li class="form__item form__item--owner">
+              <label class="form__label" for="form-email">E-mail:*
+              </label>
+              <input class="form__input-text form__input-text--email" type="email" name="email" id="form-email" placeholder="kuklachev@gmail.com" required>
+
+              <svg class="form__icon form__icon--email" width="17" height="42" aria-hidden="true" role="presentation">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
+            </li>
+
+            <li class="form__item form__item--owner">
+              <label class="form__label" for="form-phone">Телефон:*</label>
+              <input class="form__input-text form__input-text--phone" type="tel" name="phone" id="form-phone" placeholder="8 (960) 900-60-90" required>
+
+              <svg class="form__icon form__icon--phone" width="22" height="42" aria-hidden="true" role="presentation">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__fieldset form__fieldset--comments">
+        <h2 class="form__title form__title--comments">
+          Комментарий
+        </h2>
+        <div class="form__textarea-wrapper">
+          <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
+        </div>
+      </fieldset>
+
+
+      <fieldset class="form__fieldset form__fieldset--additional">
+        <h2 class="form__title form__title--additional">
+          Дополнительно
+        </h2>
+
+        <ul class="form__list form__list--additional">
+          <li class="form__item form__item--additional">
+            <input class="form__input-checkbox visually-hidden" type="checkbox" name="sweetener" id="form-sweetener" checked>
+            <label class="form__label form__label--checkbox" for="form-sweetener">
+              Сахарозаменитель
+            </label>
+          </li>
+          <li class="form__item form__item--additional">
+            <input class="form__input-checkbox visually-hidden" type="checkbox" name="water" id="form-water">
+            <label class="form__label form__label--checkbox" for="form-water">
+              Питьевая вода
+            </label>
+          </li>
+          <li class="form__item form__item--additional">
+            <input class="form__input-checkbox visually-hidden" type="checkbox" name="milk" id="form-milk">
+            <label class="form__label form__label--checkbox" for="form-milk">
+              Молоко
+            </label>
+          </li>
+          <li class="form__item form__item--additional">
+            <input class="form__input-checkbox visually-hidden" type="checkbox" name="vitamins" id="form-vitamins">
+            <label class="form__label form__label--checkbox" for="form-vitamins">
+              Витамины
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <div class="form__btn-wrapper">
+        <button class="form__btn button" type="submit">Отправить заявку</button>
+        <p class="form__required-fields">
+          * — Обязательные поля
+        </p>
+      </div>
+    </form>
   </main>
+
+  <section class="contacts">
+    <h2 class="visually-hidden">Как нас найти</h2>
+    <div class="contacts__wrapper contacts__wrapper--form-page">
+      <p class="contacts__invitation">
+        Приглашаем к сотрудничеству дилеров!
+      </p>
+      <div class="contacts__address">
+        <p class="contacts__street">ул. Большая <br>
+          Конюшенная, д. 19/8</p>
+        <span class="contacts__city">Санкт-Петербург</span>
+      </div>
+    </div>
+    <div class="contacts__map" id="map"></div>
+  </section>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
-        <img src="img/logo-footer.svg" width="130" height="25">
+        <img src="img/logo-footer.svg" width="130" height="25" alt="Логотип с названием">
       </a>
       <ul class="page-footer__social social-list">
         <li class="social-list__item">
@@ -79,30 +220,18 @@
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
-          <svg class="copyright__htmlacademy" width="27" height="34">
+          <svg class="copyright__htmlacademy" width="40" height="40">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ba5ae588-2634-40fe-8439-8376a8d73250&lang=ru_RU" type="text/javascript">
   </script>
+  <script src="js/map.js"></script>
+  <script src="js/nav.js"></script>
+
 </body>
 
 </html>

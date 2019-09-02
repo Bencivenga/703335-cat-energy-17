@@ -4,13 +4,12 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  margin-left: -20px;
-  margin-right: -20px;
   padding: 20px 20px 25px;
   color: #111111;
   border-top: 1px solid #e6e6e6;
   text-transform: uppercase;
   text-decoration: none;
+  transition: all, 0.3s;
 }
 
 .site-list__link:not(.site-list__link--active) {
@@ -20,6 +19,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .site-list__item {
+    &:last-child .site-list__link {
+      border: none;
+    }
+  }
+
   .site-list__link {
     font-size: 18px;
     line-height: 25px;

@@ -70,6 +70,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #111111;
+  transition: all, 0.3s;
 
   &::after {
     content: "";
@@ -78,9 +79,24 @@
     transform: translateY(-50%);
     width: 60px;
     height: 12px;
-    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: center;
+    transition: all, 0.3s;
+  }
+
+  &:hover {
+    &::after {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
   }
 }
 
@@ -93,6 +109,7 @@
   .programs__list {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .programs__item {
@@ -150,8 +167,8 @@
 
 @media (min-width: $desktop-width) {
   .programs {
-    width: 1220px;
-    padding: 0 40px;
+    width: 1300px;
+    padding: 0;
     margin-bottom: 73px;
   }
 
@@ -171,11 +188,10 @@
   }
 
   .programs__item {
-    padding-top: 77px;
-    padding-bottom: 62px;
-    padding-left: 52px;
-    padding-right: 52px;
-    margin: 0 40px;
+    width: 464px;
+    padding: 53px;
+    margin-right: 40px;
+    margin-left: 40px;
   }
 
   .programs__illustration {

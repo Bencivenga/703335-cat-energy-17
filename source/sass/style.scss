@@ -1,4 +1,5 @@
 @import "fonts.scss";
+@import "normalize.scss";
 @import "scaffolding.scss";
 @import "variables.scss";
 @import "blocks/page-header.scss";
@@ -7,12 +8,20 @@
 @import "blocks/programs.scss";
 @import "blocks/proof.scss";
 @import "blocks/result.scss";
+@import "blocks/slider.scss";
+@import "blocks/slide.scss";
+@import "blocks/slides.scss";
+@import "blocks/container.scss";
+@import "blocks/controls.scss";
 @import "blocks/comparison.scss";
+@import "blocks/additional-products.scss";
+@import "blocks/extra-list.scss";
 @import "blocks/contacts.scss";
 @import "blocks/advantages.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/catalog.scss";
 @import "blocks/products-more.scss";
+@import "blocks/form.scss";
 @import "blocks/site-list.scss";
 @import "blocks/social-list.scss";
 @import "blocks/copyright.scss";

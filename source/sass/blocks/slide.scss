@@ -1,0 +1,50 @@
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 240px;
+  opacity: 0;
+
+
+  &--active {
+    opacity: 1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slide {
+    height: 632px;
+    opacity: 1;
+    overflow-x: hidden;
+
+    &--before {
+      width: 345px;
+      background-image: linear-gradient(to bottom, transparent 169px, #f2f2f2 169px);
+    }
+
+    &--after {
+      left: auto;
+      right: 0;
+      width: 345px;
+      direction: rtl;
+      background-image: linear-gradient(to bottom, transparent 169px, #eaeaea 169px);
+    }
+  }
+
+  .slide__img {
+    max-width: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slide--before {
+    left: 610px;
+    background-image: linear-gradient(to bottom, transparent 190px, #f2f2f2 190px);
+  }
+
+  .slide--after {
+    right: -80px;
+    background-image: linear-gradient(to bottom, transparent 190px, #eaeaea 190px);
+  }
+}

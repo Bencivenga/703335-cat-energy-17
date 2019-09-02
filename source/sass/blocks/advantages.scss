@@ -90,7 +90,6 @@
   .advantages {
     width: 708px;
     padding: 0 30px;
-    margin: 0;
   }
 
   .advantages__title {
@@ -141,7 +140,8 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    width: 1300px;
+    width: 1220px;
+    padding: 0 40px;
   }
 
   .advantages__title {

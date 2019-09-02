@@ -17,7 +17,8 @@
   </div>
 
   <header class="page-header page-header--viewing">
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+
       <div class="main-nav__logo-wrapper">
         <a class="main-nav__logo" href="index.html">
           <picture>
@@ -41,17 +42,18 @@
           <a class="site-list__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
+
     </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Интернет-магазин «Кэт Энерджи»</h1>
     <section class="choose-program">
-      <!-- <div class="choose-program__lead"> -->
+
       <h2 class="choose-program__title">Функциональное питание для котов</h2>
       <p class="choose-program__text">
         Занялся собой? Займись котом!
       </p>
-      <!-- </div> -->
+
       <picture>
         <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/index-can-desktop@1x.webp, img/content/index-can-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)" srcset="img/content/index-can-tablet@1x.webp, img/content/index-can-tablet@2x.webp 2x">
@@ -67,7 +69,7 @@
       <ul class="programs__list">
         <li class="programs__item programs__item--loss">
           <div class="programs__illustration">
-            <svg class="programs__icon programs__icon--slim" width="35" height="50">
+            <svg class="programs__icon programs__icon--slim" aria-hidden="true" role="presentation" width="35" height="50">
               <use xlink:href="img/sprite.svg#icon-cat-slim"></use>
             </svg>
           </div>
@@ -81,7 +83,7 @@
         </li>
         <li class="programs__item programs__item--gain">
           <div class="programs__illustration">
-            <svg class="programs__icon programs__icon--pro" width="69" height="28">
+            <svg class="programs__icon programs__icon--pro" aria-hidden="true" role="presentation" width="69" height="28">
               <use xlink:href="img/sprite.svg#icon-cat-pro"></use>
             </svg>
           </div>
@@ -122,75 +124,87 @@
       </ul>
     </section>
     <section class="proof">
-      <h2 class="proof__title">Живой пример</h2>
-      <p class="proof__description">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
-      <div class="proof__wrapper">
-        <ul class="result">
-          <li class="result__item">
-            <div class="result__wrapper">
-              <b class="result__total">5 кг</b>
-              <p class="result__text">снижение веса</p>
-            </div>
-          </li>
-          <li class="result__item">
-            <div class="result__wrapper">
-              <b class="result__total">60 дней</b>
-              <p class="result__text">затрачено времени</p>
-            </div>
-          </li>
-        </ul>
-        <p class="result__total-price">
-          Затраты на питание: 15 000 руб.
-        </p>
-      </div>
-      <div class="proof__image-wrapper">
-        <picture>
-          <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/before-desktop@1x.webp, img/content/before-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/before-tablet@1x.webp, img/content/before-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/content/before-mobile@1x.webp, img/content/before-mobile@2x.webp 2x">
-          <img class="proof__image proof__image--before" src="img/content/before-mobile@1x.png" srcset="img/content/before-mobile@2x.png 2x" alt="Толстый кот">
-        </picture>
-        <picture>
-          <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/after-desktop@1x.webp, img/content/after-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/after-tablet@1x.webp, img/content/after-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/content/after-mobile@1x.webp, img/content/after-mobile@2x.webp 2x">
-          <img class="proof__image proof__image--after" src="img/content/after-mobile@1x.png" srcset="img/content/after-mobile@2x.png 2x" alt="Стройный кот">
-        </picture>
-      </div>
-      <div class="comparison">
-        <button class="comparison__btn" type="button">
-          Было
-        </button>
-        <div class="comparison__range">
-          <div class="comparison__toggle"></div>
+      <div class="proof__text">
+        <div class="proof__container">
+          <h2 class="proof__title">Живой пример</h2>
+          <p class="proof__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="result">
+            <ul class="result__list">
+              <li class="result__item">
+                <div class="result__info">
+                  <b class="result__total">5 кг</b>
+                  <p class="result__text">снижение веса</p>
+                </div>
+              </li>
+              <li class="result__item">
+                <div class="result__info result__info--time">
+                  <b class="result__total">60 дней</b>
+                  <p class="result__text">затрачено времени</p>
+                </div>
+              </li>
+            </ul>
+            <p class="result__total-price">
+              <span>Затраты на питание:</span>
+              <span>15 000 руб.</span>
+            </p>
+          </div>
         </div>
-        <button class="comparison__btn" type="button">
-          Стало
-        </button>
+      </div>
+
+      <div class="proof__visual slider">
+        <div class="slider__slides slides">
+          <picture class="slides__item slide slide--before slide--active">
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/before-desktop@1x.webp, img/content/before-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/before-tablet@1x.webp, img/content/before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/before-mobile@1x.webp, img/content/before-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)" srcset="img/content/before-desktop@1x.png 1x, img/content/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/content/before-tablet@1x.png 1x, img/content/before-tablet@2x.png 2x">
+            <img class="slide__img" src="img/content/before-mobile@1x.png" srcset="img/content/before-mobile@2x.png 2x" alt="Толстый кот">
+          </picture>
+          <picture class="slides__item slide slide--after">
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/after-desktop@1x.webp, img/content/after-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/after-tablet@1x.webp, img/content/after-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/after-mobile@1x.webp, img/content/after-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)" srcset="img/content/after-desktop@1x.png 1x, img/content/after-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/content/after-tablet@1x.png 1x, img/content/after-tablet@2x.png 2x">
+            <img class="slide__img" src="img/content/after-mobile@1x.png" srcset="img/content/after-mobile@2x.png 2x" alt="Стройный кот">
+          </picture>
+        </div>
+        <div class="comparison">
+          <button class="comparison__btn" type="button">
+            Было
+          </button>
+          <div class="comparison__range">
+            <div class="comparison__toggle" tabindex="0" aria-label="Ползунок слайдера"></div>
+          </div>
+          <button class="comparison__btn" type="button">
+            Стало
+          </button>
+        </div>
       </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper contacts__wrapper--index">
         <p class="contacts__invitation">
           Приглашаем к сотрудничеству дилеров!
         </p>
-        <p class="contacts__address">
-          ул. Большая <br>
-          Конюшенная, д. 19/8
-          Санкт-Петербург
-        </p>
+        <div class="contacts__address">
+          <p class="contacts__street">ул. Большая <br>
+            Конюшенная, д. 19/8</p>
+          <span class="contacts__city">Санкт-Петербург</span>
+        </div>
       </div>
-      <div class="contacts__map"></div>
+      <div class="contacts__map" id="map"></div>
     </section>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
-        <img src="img/logo-footer.svg" width="130" height="25">
+        <img src="img/logo-footer.svg" width="130" height="25" alt="Логотип с названием">
       </a>
       <ul class="page-footer__social social-list">
         <li class="social-list__item">
@@ -221,31 +235,17 @@
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
-          <svg class="copyright__htmlacademy" width="27" height="34">
+          <svg class="copyright__htmlacademy" width="40" height="40">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ba5ae588-2634-40fe-8439-8376a8d73250&lang=ru_RU" type="text/javascript">
   </script>
-
+  <script src="js/map.js"></script>
+  <script src="js/nav.js"></script>
 </body>
 
 </html>

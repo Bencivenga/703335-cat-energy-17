@@ -1,0 +1,107 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  padding-right: 36px;
+  padding-left: 40px;
+  margin-top: 20px;
+}
+
+.controls__btn {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 0;
+  color: #111111;
+  text-transform: uppercase;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.controls__container {
+  width: 84px;
+  height: 6px;
+  padding: 3px 4px;
+  margin-top: 4px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+}
+
+.controls__indicator {
+  display: block;
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 6px;
+}
+
+.controls__range {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .controls {
+    padding-right: 68px;
+    padding-left: 69px;
+    margin-top: 0;
+  }
+
+  .controls__btn {
+    position: relative;
+    font-size: 20px;
+    cursor: default;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
+  }
+
+  .controls__container {
+    width: 428px;
+    height: 34px;
+    padding-top: 13px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .controls__indicator {
+    display: none;
+  }
+
+  .controls__range {
+    display: block;
+    width: 100%;
+    height: 6px;
+    appearance: none;
+    background-color: #dcdcdc;
+    border-radius: 3px;
+    outline: 0;
+  }
+
+  .controls__range::-webkit-slider-thumb {
+    width: 34px;
+    height: 34px;
+    appearance: none;
+    background-color: #cdcdcd;
+    background-image: url("../img/filter-button.svg");
+    background-size: 32px 37px;
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .controls__range::-moz-range-thumb {
+    width: 34px;
+    height: 34px;
+
+    appearance: none;
+    background-color: #cdcdcd;
+    background-image: url("../img/filter-button.svg");
+    background-size: 32px 37px;
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}

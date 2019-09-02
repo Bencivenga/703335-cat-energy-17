@@ -16,16 +16,16 @@
 }
 
 .comparison__toggle::after {
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 50%;
-    right: 5px;
-    width: 35px;
-    height: 6px;
-    border-radius: 50px;
-    background-color: #68b738;
-    transform: translateY(-50%);
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  right: 5px;
+  width: 35px;
+  height: 6px;
+  border-radius: 50px;
+  background-color: #68b738;
+  transform: translateY(-50%);
 }
 
 .comparison__btn {
@@ -37,6 +37,7 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,8 +46,27 @@
   }
 
   .comparison__btn {
+    position: relative;
     font-size: 20px;
-    border-bottom: 1px dotted #dcdcdc;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
+      transition: all, 0.3s;
+    }
+
+    &:hover::after {
+      border-bottom-style: solid;
+    }
+
+    &:active::after {
+      display: none;
+    }
   }
 
   .comparison__range {
@@ -67,7 +87,8 @@
     transform: translate(-50%, -50%);
     border: 1px solid #dcdcdc;
     background-color: #ffffff;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    transition: all, 0.3s;
 
     &::after {
       width: 8px;
@@ -75,5 +96,21 @@
       border-radius: 50%;
       margin: auto;
     }
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid #68b738;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comparison {
+    margin-left: 668px;
+    margin-top: 42px;
   }
 }
