@@ -638,17 +638,6 @@
   }
 }
 
-// .form__input-text,
-// .form__textarea {
-//   &:hover {
-//     border-color: #cdcdcd;
-//   }
-//
-//   &:focus {
-//     outline: 2px solid #444444;
-//   }
-// }
-
 .form__input-text:focus + .form__icon {
   fill: #68b738;
 }
