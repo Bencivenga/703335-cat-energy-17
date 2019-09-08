@@ -1,18 +1,17 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 30px 20px;
-}
+  padding: 27px 19px;
 
-.contacts__wrapper--form-page {
-  background-color: #f2f2f2;
+  &--catalog,
+  &--form {
+    background-color: #f2f2f2;
+  }
 }
-
 
 .contacts__invitation {
   width: 140px;
   margin: 0;
-  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -47,8 +46,8 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    padding: 0 70px;
-    padding-top: 68px;
+    padding: 0 71px;
+    padding-top: 63px;
     padding-bottom: 60px;
     background-color: #f2f2f2;
 
@@ -58,6 +57,7 @@
   }
 
   .contacts__invitation {
+    width: 170px;
     font-size: 20px;
     line-height: 25px;
   }
@@ -69,7 +69,7 @@
   }
 
   .contacts__street {
-    margin-bottom: 25px;
+    margin-bottom: 19px;
   }
 
   .contacts__map {
@@ -85,14 +85,18 @@
 
   .contacts__wrapper {
     position: absolute;
-    top: 95px;
-    left: 110px;
-    width: 416px;
-    padding: 0 77px;
-    padding-top: 65px;
+    top: 97px;
+    left: 113px;
+    width: 420px;
+    padding: 0 73px;
+    padding-top: 63px;
     padding-bottom: 56px;
     background-color: #ffffff;
     z-index: 1;
+  }
+
+  .contacts__address {
+    text-align: left;
   }
 
   .contacts__map {

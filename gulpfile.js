@@ -94,26 +94,6 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-
-// gulp.task("server", function () {
-//   server.init({
-//     server: "build/",
-//     notify: false,
-//     open: true,
-//     cors: true,
-//     ui: false
-//   });
-//
-//   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-//   gulp.watch("source/img/*.svg", gulp.series("sprite", "html", "refresh"));
-//   gulp.watch("source/*.html"), gulp.series("html", "refresh");
-// });
-//
-// gulp.task("refresh", function (done) {
-//   server.reload();
-//   done();
-// });
-
 gulp.task("server", function () {
   server.init({
     server: "build/",

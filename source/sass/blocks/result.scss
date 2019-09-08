@@ -1,6 +1,6 @@
 .result__list {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 33px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -24,7 +24,7 @@
 }
 
 .result__total {
-  font-family: "Oswald", sans-serif;
+  color: #111111;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -37,15 +37,17 @@
   line-height: 12px;
   font-weight: 400;
   color: #444444;
+  margin: 0;
+  margin-top: 6px;
 }
 
 .result__total-price {
-  font-family: "Oswald", sans-serif;
+  color: #111111;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -60,12 +62,13 @@
   .result__list {
     max-width: 366px;
     width: 100%;
+    margin-bottom: 22px;
   }
 
   .result__item {
     width: 160px;
-    height: 60px;
-    padding-top: 12px;
+    height: 56px;
+    padding-top: 14px;
   }
 
   .result__info {
@@ -86,12 +89,20 @@
   .result__text {
     font-size: 14px;
     line-height: 14px;
+    margin-top: 11px;
   }
 
   .result__total-price {
     width: 192px;
+    align-self: flex-start;
     text-align: right;
     font-size: 20px;
+    margin-top: 11px;
+  }
+
+  .result__spend {
+    display: block;
+    margin-bottom: 9px;
   }
 }
 
@@ -102,12 +113,16 @@
     align-items: flex-start;
   }
 
+  .result__list {
+    margin-bottom: 50px;
+  }
+
   .result__info {
     background-color: #f2f2f2;
   }
 
   .result__total-price {
-    width: 325px;
+    width: 328px;
     display: flex;
     justify-content: space-between;
   }

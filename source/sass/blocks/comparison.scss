@@ -1,80 +1,122 @@
-.comparison {
-  width: 200px;
+.comparison__slider {
+  max-width: 280px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+}
+
+.comparison__img {
+  display: block;
+  max-width: inherit;
+  margin-left: -20px;
+
+  &--after {
+    display: none;
+  }
 }
 
 .comparison__range {
-  position: relative;
-  margin-top: 5px;
-  width: 84px;
-  height: 12px;
-  border: 1px solid #cdcdcd;
-  border-radius: 50px;
-  background-color: #ffffff;
-}
-
-.comparison__toggle::after {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 50%;
-  right: 5px;
-  width: 35px;
-  height: 6px;
-  border-radius: 50px;
-  background-color: #68b738;
-  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 195px;
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 37px;
 }
 
 .comparison__btn {
-  font-family: "Oswald", sans-serif;
+  font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: #111111;
   text-transform: uppercase;
   cursor: pointer;
   background-color: transparent;
   border: none;
   padding: 0;
+  margin: 0;
+}
+
+.comparison__progress {
+  position: relative;
+  max-width: 84px;
+  width: 100%;
+  height: 12px;
+  border: 1px solid #d9d9d9;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+
+.comparison__toggle {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 50%;
+    width: 35px;
+    height: 6px;
+    background-color: #68b738;
+    border-radius: 50px;
+    transform: translateY(-50%);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .comparison {
-    width: 575px;
+    margin-top: 25px;
   }
 
-  .comparison__btn {
+  .comparison__slider {
     position: relative;
-    font-size: 20px;
+    display: flex;
+    max-width: inherit;
+    height: 560px;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -10px;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
-      transition: all, 0.3s;
+  .comparison__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    margin: 0 auto;
+
+    &--before {
+      clip: rect(auto, 345px, auto, auto);
     }
 
-    &:hover::after {
-      border-bottom-style: solid;
-    }
-
-    &:active::after {
-      display: none;
+    &--after {
+      display: block;
+      clip: rect(auto, auto, auto, 345px);
     }
   }
 
   .comparison__range {
-    width: 100%;
+    max-width: 575px;
+    padding-top: 10px;
+    padding-bottom: 70px;
+  }
+
+  .comparison__btn {
+    font-size: 20px;
+    padding: 5px 0;
+    border-bottom: 1px dotted #d9d9d9;
+
+    &:hover {
+      border-style: solid;
+    }
+
+    &:active {
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  .comparison__progress {
+    max-width: inherit;
     height: 6px;
-    margin-left: 25px;
-    margin-right: 25px;
-    background-color: #dcdcdc;
+    margin: 0 25px;
+    background-color: #d9d9d9;
   }
 
   .comparison__toggle {
@@ -84,17 +126,26 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    transform: translate(-50%, -50%);
     border: 1px solid #dcdcdc;
     background-color: #ffffff;
+    cursor: pointer;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     transition: all, 0.3s;
 
     &::after {
+      content: "";
+      position: absolute;
+      // top: 0;
+      // bottom: -8px;
+      right: 0;
+      left: 0;
       width: 8px;
       height: 8px;
-      border-radius: 50%;
       margin: auto;
+      border-radius: 50%;
+      background-color: #68b738;
     }
 
     &:hover {
@@ -103,14 +154,41 @@
 
     &:active {
       border: 2px solid #68b738;
-      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .comparison {
-    margin-left: 668px;
-    margin-top: 42px;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .comparison__slider {
+    height: 500px;
+  }
+
+  .comparison__img {
+    left: 82px;
+
+    &--before {
+      clip: rect(auto, 365px, auto, auto);
+    }
+
+    &--after {
+      clip: rect(auto, auto, auto, 365px);
+    }
+  }
+
+  .comparison__range {
+    margin-left: auto;
+    margin-right: inherit;
+    padding-top: 30px;
+    padding-bottom: 69px;
+  }
+
+  .comparison__toggle {
+    left: 51.5%;
   }
 }

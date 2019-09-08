@@ -2,17 +2,17 @@
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
+  margin-bottom: 44px;
 }
 
 .advantages__title {
-  font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
   color: #111111;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 .advantages__list {
@@ -25,12 +25,12 @@
 .advantages__item {
   position: relative;
   padding-left: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 60px;
     height: 60px;
@@ -90,17 +90,17 @@
   .advantages {
     width: 708px;
     padding: 0 30px;
+    margin-bottom: 13px;
   }
 
   .advantages__title {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 190px;
   }
 
   .advantages__list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -111,27 +111,28 @@
   }
 
   .advantages__item {
+    display: flex;
+    flex-direction: column;
     width: 324px;
-    min-height: 230px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 80px;
+    padding: 0;
+    margin-top: 45px;
+    margin-bottom: 87px;
 
     &::before {
+      position: static;
       width: 80px;
       height: 80px;
-      top: -120px;
+      margin-bottom: 33px;
     }
 
     &::after {
       counter-increment: section;
       content: counter(section) "";
       position: absolute;
-      top: -150px;
-      left: 120px;
+      top: -40px;
+      left: 112px;
       z-index: -1;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-size: 281px;
+      font-size: 280px;
       line-height: 281px;
       color: #f2f2f2;
     }
@@ -142,15 +143,15 @@
   .advantages {
     width: 1220px;
     padding: 0 40px;
+    margin-bottom: -5px;
   }
 
   .advantages__title {
-    margin-left: 40px;
+    margin-bottom: 27px;
   }
 
   .advantages__item {
     width: 245px;
-    margin: 30px;
     padding: 0;
   }
 }

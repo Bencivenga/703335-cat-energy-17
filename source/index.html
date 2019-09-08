@@ -24,7 +24,7 @@
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="192" height="65" alt="Логотип магазина «Кэт Энерджи»">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="191" height="65" alt="Логотип магазина «Кэт Энерджи»">
           </picture>
         </a>
         <button class="main-nav__toggle" type="button">
@@ -74,7 +74,7 @@
             </svg>
           </div>
           <h3 class="programs__title">Похудение</h3>
-          <p class="programs__description">
+          <p class="programs__description programs__description--slim">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
           <a class="programs__link" href="#">
@@ -88,7 +88,7 @@
             </svg>
           </div>
           <h3 class="programs__title">Набор массы</h3>
-          <p class="programs__description">
+          <p class="programs__description programs__description--gain">
             Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
@@ -123,73 +123,80 @@
         </li>
       </ul>
     </section>
-    <section class="proof">
-      <div class="proof__text">
-        <div class="proof__container">
-          <h2 class="proof__title">Живой пример</h2>
-          <p class="proof__description">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <div class="result">
-            <ul class="result__list">
-              <li class="result__item">
-                <div class="result__info">
-                  <b class="result__total">5 кг</b>
-                  <p class="result__text">снижение веса</p>
-                </div>
-              </li>
-              <li class="result__item">
-                <div class="result__info result__info--time">
-                  <b class="result__total">60 дней</b>
-                  <p class="result__text">затрачено времени</p>
-                </div>
-              </li>
-            </ul>
-            <p class="result__total-price">
-              <span>Затраты на питание:</span>
-              <span>15 000 руб.</span>
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="proof__visual slider">
-        <div class="slider__slides slides">
-          <picture class="slides__item slide slide--before slide--active">
-            <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/before-desktop@1x.webp, img/content/before-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/before-tablet@1x.webp, img/content/before-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/content/before-mobile@1x.webp, img/content/before-mobile@2x.webp 2x">
-            <source media="(min-width: 1300px)" srcset="img/content/before-desktop@1x.png 1x, img/content/before-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/content/before-tablet@1x.png 1x, img/content/before-tablet@2x.png 2x">
-            <img class="slide__img" src="img/content/before-mobile@1x.png" srcset="img/content/before-mobile@2x.png 2x" alt="Толстый кот">
-          </picture>
-          <picture class="slides__item slide slide--after">
-            <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/after-desktop@1x.webp, img/content/after-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/after-tablet@1x.webp, img/content/after-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/content/after-mobile@1x.webp, img/content/after-mobile@2x.webp 2x">
-            <source media="(min-width: 1300px)" srcset="img/content/after-desktop@1x.png 1x, img/content/after-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/content/after-tablet@1x.png 1x, img/content/after-tablet@2x.png 2x">
-            <img class="slide__img" src="img/content/after-mobile@1x.png" srcset="img/content/after-mobile@2x.png 2x" alt="Стройный кот">
-          </picture>
-        </div>
-        <div class="comparison">
-          <button class="comparison__btn" type="button">
-            Было
-          </button>
-          <div class="comparison__range">
-            <div class="comparison__toggle" tabindex="0" aria-label="Ползунок слайдера"></div>
+    <section class="proof">
+      <div class="proof__wrapper">
+        <div class="proof__row">
+          <div class="proof__column">
+            <h2 class="proof__title">Живой пример</h2>
+            <p class="proof__description">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
+            <div class="result">
+              <ul class="result__list">
+                <li class="result__item">
+                  <div class="result__info">
+                    <b class="result__total">5 кг</b>
+                    <p class="result__text">снижение веса</p>
+                  </div>
+                </li>
+                <li class="result__item">
+                  <div class="result__info result__info--time">
+                    <b class="result__total">60 дней</b>
+                    <p class="result__text">затрачено времени</p>
+                  </div>
+                </li>
+              </ul>
+              <p class="result__total-price">
+                <span class="result__spend">Затраты на питание:</span>
+                <span>15 000 руб.</span>
+              </p>
+            </div>
           </div>
-          <button class="comparison__btn" type="button">
-            Стало
-          </button>
+
+          <div class="proof__column proof__column--gradient proof__column--desktop">
+            <div class="comparison">
+              <div class="comparison__slider">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/before-desktop@1x.webp, img/content/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/before-tablet@1x.webp, img/content/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/before-mobile@1x.webp, img/content/before-mobile@2x.webp 2x">
+                  <source media="(min-width: 1300px)" srcset="img/content/before-desktop@1x.png 1x, img/content/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/content/before-tablet@1x.png 1x, img/content/before-tablet@2x.png 2x">
+                  <img class="comparison__img comparison__img--before" src="img/content/before-mobile@1x.png" srcset="img/content/before-mobile@2x.png 2x" alt="Толстый кот">
+                </picture>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/content/after-desktop@1x.webp, img/content/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/after-tablet@1x.webp, img/content/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/after-mobile@1x.webp, img/content/after-mobile@2x.webp 2x">
+                  <source media="(min-width: 1300px)" srcset="img/content/after-desktop@1x.png 1x, img/content/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/content/after-tablet@1x.png 1x, img/content/after-tablet@2x.png 2x">
+                  <img class="comparison__img comparison__img--after" src="img/content/after-mobile@1x.png" srcset="img/content/after-mobile@2x.png 2x" alt="Стройный кот">
+                </picture>
+              </div>
+              <div class="comparison__range">
+                <button class="comparison__btn" type="button">
+                  Было
+                </button>
+                <div class="comparison__progress">
+                  <div class="comparison__toggle" aria-label="Ползунок слайдера">
+                  </div>
+                </div>
+                <button class="comparison__btn" type="button">
+                  Стало
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
     <section class="contacts">
       <h2 class="visually-hidden">Как нас найти</h2>
       <div class="contacts__wrapper contacts__wrapper--index">
         <p class="contacts__invitation">
-          Приглашаем к сотрудничеству дилеров!
+          Приглашаем<br> к сотрудничеству дилеров!
         </p>
         <div class="contacts__address">
           <p class="contacts__street">ул. Большая <br>
@@ -246,6 +253,8 @@
   </script>
   <script src="js/map.js"></script>
   <script src="js/nav.js"></script>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
 </body>
 
 </html>
