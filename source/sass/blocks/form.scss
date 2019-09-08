@@ -6,6 +6,7 @@
 .form__main-title {
   font-size: 36px;
   line-height: 60px;
+  color: #111111;
   font-weight: 400;
   padding: 0 20px;
   padding-top: 14px;
@@ -36,6 +37,7 @@
   margin: 0 0 37px;
   font-size: 14px;
   line-height: 18px;
+  color: #111111;
   text-transform: uppercase;
 }
 
@@ -79,6 +81,7 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  color: #111111;
   text-transform: uppercase;
 
   &--owner {
@@ -172,6 +175,7 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  color: #111111;
   margin: 0;
   padding: 0 20px;
   margin-bottom: 25px;
@@ -637,17 +641,6 @@
     width: 570px;
   }
 }
-
-// .form__input-text,
-// .form__textarea {
-//   &:hover {
-//     border-color: #cdcdcd;
-//   }
-//
-//   &:focus {
-//     outline: 2px solid #444444;
-//   }
-// }
 
 .form__input-text:focus + .form__icon {
   fill: #68b738;
