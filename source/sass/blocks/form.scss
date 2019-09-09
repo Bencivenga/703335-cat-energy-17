@@ -605,7 +605,7 @@
     }
 
     &--comments {
-      width: 1220px;
+      width: auto;
       padding: 0 40px;
       margin-bottom: 62px;
 
@@ -628,7 +628,9 @@
   }
 
   .form__textarea-wrapper {
+    max-width: 1220px;
     padding: 0;
+    margin: 0 auto;
   }
 
   .form__btn-wrapper {
