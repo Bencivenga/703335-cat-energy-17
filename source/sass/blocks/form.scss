@@ -432,7 +432,7 @@
     }
 
     &--owner::after {
-      width: calc((100% - 708px) / 2 + 130px);
+      width: calc((100% - 708px) / 2 + 116px);
       top: 22px;
     }
 
@@ -442,14 +442,14 @@
         top: 22px;
       }
 
-      width: 708px;
+      width: auto;
       padding: 0 30px;
       margin-bottom: 60px;
     }
 
     &--additional {
       &::after {
-        width: calc((100% - 708px) / 2 + 420px);
+        width: calc((100% - 708px) / 2 + 416px);
         top: 22px;
       }
 
@@ -543,14 +543,17 @@
     }
 
     &--owner {
+      width: 1220px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
+      margin: 0;
       margin-bottom: 34px;
     }
 
     &--additional {
       width: 1300px;
-      margin: 0 auto;
+      padding: 0;
     }
   }
 
@@ -574,8 +577,9 @@
     padding: 0;
 
     &--additional {
-      padding-left: 40px;
-      margin-right: 10px;
+      width: 245px;
+      margin-right: 40px;
+      margin-left: 40px;
     }
 
     &--owner {
@@ -584,7 +588,7 @@
   }
 
   .form__icon {
-    top: 8px;
+    top: 6px;
 
     &--email {
       right: 21px;
@@ -596,8 +600,10 @@
   }
 
   .form__fieldset {
+    width: auto;
+
     &::before {
-      width: calc(((100% - 1220px) / 2) - 40px);
+      width: calc(((100% - 1220px) / 2) - 80px);
     }
 
     &--owner::after {
@@ -615,16 +621,20 @@
     }
 
     &--additional {
-      margin-bottom: 30px;
+      margin-bottom: 28px;
 
       &::after {
-        width: calc((100% - 1220px) / 2 + 968px);
+        width: calc((100% - 1220px) / 2 + 960px);
       }
     }
   }
 
   .form__title {
-    padding-left: calc((100% - 1220px) / 2);
+    padding-left: calc((100% - 1300px) / 2);
+
+    &--additional {
+      padding-left: calc((100% - 1280px) / 2);
+    }
   }
 
   .form__textarea-wrapper {
@@ -635,7 +645,7 @@
 
   .form__btn-wrapper {
     width: 830px;
-    margin-left: 40px;
+    padding-left: 40px;
     margin-bottom: 83px;
   }
 
@@ -659,4 +669,13 @@
 
 .form__input-text:invalid:focus + .form__icon {
   fill: #ff8282;
+}
+
+@media (width: $desktop-width) {
+  .form__title {
+    &--owner,
+    &--additional {
+      padding: 0 40px;
+    }
+  }
 }
